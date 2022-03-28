@@ -12,6 +12,7 @@ body    {
     position: fixed;
     top: 0;
     align-items: center;
+    z-index: 2;
 }
 .menu-topo ion-icon {
     margin-left: 1%;
@@ -49,8 +50,13 @@ body    {
     width: 200px;
     padding: 10px;
     box-sizing: border-box;
+    
 }
-
+.menu-inferior {
+    display: flex;
+    width: 907px;
+    height: 100%;
+}
 /* Caixa de Stories */
 .storybox {
     display: flex;
@@ -106,11 +112,62 @@ body    {
 }
 /* Sidebar */
 .sidebar {
+    display: flex;
     width: 293px;
+    height: 400px;
+    position: absolute;
+    right: 0px;
+    flex-direction: column;
+    align-items: flex-start;
     background-color: lightgreen;
+    
 }
 .sidebar-account {
-
+    display: flex;
+    width: 100%;
+    height: 56px;
+    flex-direction: row;
+    margin-top: 106px;
+}
+.sidebar-account-body {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+}
+.sidebar-body-title a:nth-child(1){
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8E8E;
+}
+.sidebar-body-title a:nth-child(2){
+    font-size: 12px;
+    font-weight: 500;
+    color: #262626;
+}
+.sidebar-account img {
+    width: 56px;
+    height: 56px;
+}
+.sidebar-account-description {
+    display: flex;
+    width: 100%;
+    height: 56px;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.sidebar-account-description :nth-child(1){
+    font-size: 14px;
+    font-weight: 500;
+    color: #262626;
+}
+.sidebar-account-description :nth-child(2){
+    font-size: 14px;
+    font-weight: 300;
+    color: #8E8E8E;
 }
 .sidebar-account-title {
 
