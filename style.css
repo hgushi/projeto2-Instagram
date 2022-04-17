@@ -17,6 +17,9 @@ body {
     justify-content: center;
 }
 
+a:hover {
+    opacity: 0.5;
+}
 .instagram-wrapper {
     display: flex;
     align-items: center;
